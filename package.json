@@ -1,0 +1,33 @@
+{
+  "name": "blog-appv",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "workspaces":[
+    "api",
+    "app"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build --workspaces=app",
+    "start": "npm run start --workspaces=api",
+    "dev:api": "npm run build && npm run dev --workspaces=api",
+
+  },
+  "eslintConfig": {
+    "extendes": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "jest": true,
+      "cypress global": true
+    },
+    "plugins": [
+      "cypress"
+    ]
+  },
+  "devDependencies": {
+    "standard": "17.0.0",
+    "eslint-plugin-cypress": "^2.13.3"
+  },
+  "author": "",
+  "license": "ISC"
+}

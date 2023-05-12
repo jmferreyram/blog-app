@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0M2FiYTkzMTllNjljMzIyNzUwYzk2ZSIsInVzZXJOYW1lIjoiam1mZXJyZXlyYSIsImlhdCI6MTY4MTU3MDQ5M30.FEOGCtP19xtb94EKXLqXXsl4g9A4AuNOpY2p0stdwGc
+
+{
+  "title": "Chequeo final por dio3!",
+  "author": "New author34234",
+  "url": "URL4234234",
+  "likes": 4
+}
